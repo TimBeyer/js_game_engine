@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+    <script src="http://cdn.socket.io/stable/socket.io.js"></script>		
+    <script type="text/javascript" src="src/js/engine/GameEngine.js"></script>
+    <script type="text/javascript" src="src/js/engine/GameServer.js"></script>
+    <script type="text/javascript" src="src/js/engine/Renderer.js"></script>
+    <script type="text/javascript" src="src/js/engine/InputSystem.js"></script>
+    <script type="text/javascript" src="src/js/engine/ImageTools.js"></script>
+    <script type="text/javascript" src="src/js/engine/Tileset.js"></script>
+		
+		<script type="text/javascript" src="src/js/engine/sprites/Sprite.js"></script>
+    <script type="text/javascript" src="src/js/engine/sprites/RawSprite.js"></script>
+    <script type="text/javascript" src="src/js/engine/sprites/AnimatedSprite.js"></script>
+    
+    <script type="text/javascript" src="src/js/engine/layers/TileLayer.js"></script>
+    <script type="text/javascript" src="src/js/engine/layers/SpriteLayer.js"></script>
+
+    <script type="text/javascript" src="src/js/game/GameAssets.js"></script>
+    <script type="text/javascript" src="src/js/game/SampleGame.js"></script>
+  
+
+    <script type="text/javascript" src="src/js/engine/entities/Timer.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css" href="src/css/main.css">
+
+	</head>	
+		<body>
+			<center>
+				<canvas id="can" width="1" height="1"></canvas>	
+
+			<script>
+  				var canvas = document.getElementById("can");
+  				var width = 640;//self.innerWidth;
+  				var height = 400;//self.innerHeight;
+  				var engine = new GameEngine(canvas,width,height);
+				  var game = new SampleGame();
+          engine.loadGamePackage(game, game.onLoad);
+
+      </script>
+
+			</center>
+			
+
+			
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19666747-1']);
+  _gaq.push(['_setDomainName', '.badmeme.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>		
+		</body>
+		
+</html>		
